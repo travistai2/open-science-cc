@@ -44,7 +44,8 @@ mod.dat$jour.bin.scaled<-scale(as.numeric(mod.dat$jour.bin))
 fit<-lmer(log10MeanCite ~ jour.bin.scaled*OA + 
 							(1|Year) + (1 | Source.title),
 							data=mod.dat)
-
+summary(fit)
+hist(resid(fit))
 
 ## save model output
 save(fit, mod.dat, file='./Data/scopus_glmerfit.Rdata')
