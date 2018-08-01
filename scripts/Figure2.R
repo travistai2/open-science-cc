@@ -90,7 +90,7 @@ abline(h=scopus.avg[2], col=alpha(cols[2], 0.5), lty=2)
 par(mar=c(1.5,1.5, 1.5, 1.5), xpd=FALSE)
 with(ratio.plot[ratio.plot$source=='news' & ratio.plot$OA=='Closed',], 
 		plotCI(xlim, p, ui=p, li=p, pch=19,cex=1.5, sfrac=0, 
-			axes=F, xlim=c(-1.5, 1.5), xlab='', ylab='', ylim=c(0, 0.5),
+			axes=F, xlim=c(-1.5, 1.5), xlab='', ylab='', ylim=c(0, 1.8),
 			scol=cols[1], col=cols[1]))
 with(ratio.plot[ratio.plot$source=='news' & ratio.plot$OA=='Open',], 
 		plotCI(xlim, p, ui=p, li=p, pch=19,cex=1.5, sfrac=0,
@@ -107,7 +107,7 @@ abline(h=news.avg[2], col=alpha(cols[2], 0.5), lty=2)
 par(mar=c(1.5,1.5, 1.5, 1.5), xpd=FALSE)
 with(ratio.plot[ratio.plot$source=='twitter' & ratio.plot$OA=='Closed',], 
 		plotCI(xlim, p, ui=p, li=p, pch=19,cex=1.5, sfrac=0, 
-			axes=F, xlim=c(-1.5, 1.5), xlab='', ylab='', ylim=c(0,5),
+			axes=F, xlim=c(-1.5, 1.5), xlab='', ylab='', ylim=c(0,10),
 			scol=cols[1], col=cols[1]))
 with(ratio.plot[ratio.plot$source=='twitter' & ratio.plot$OA=='Open',], 
 		plotCI(xlim, p, ui=p, li=p, pch=19,cex=1.5, sfrac=0,
@@ -126,7 +126,7 @@ abline(h=twitter.avg[2], col=alpha(cols[2], 0.5), lty=2)
 par(mar=c(1.5,1.5, 1.5, 1.5), xpd=FALSE)
 with(ratio.plot[ratio.plot$source=='policy' & ratio.plot$OA=='Closed',], 
 		plotCI(xlim, p, ui=p, li=p, pch=19,cex=1.5, sfrac=0, 
-			axes=F, xlim=c(-1.5, 1.5), xlab='', ylab='', ylim=c(0.1,0.5),
+			axes=F, xlim=c(-1.5, 1.5), xlab='', ylab='', ylim=c(0.1,0.7),
 			scol=cols[1], col=cols[1]))
 with(ratio.plot[ratio.plot$source=='policy' & ratio.plot$OA=='Open',], 
 		plotCI(xlim, p, ui=p, li=p, pch=19,cex=1.5, sfrac=0,

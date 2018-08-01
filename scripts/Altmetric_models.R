@@ -7,15 +7,17 @@
 ####################
 
 rm(list=ls())
-setwd("~/GitHub/open-science-cc/")
 
 ## load packages
 library(dplyr)
 library(tidyr)
 library(lme4)
+library(here)
+
+setwd(here())
 
 ## load Almetric dataset
-load(file='Data/altmetric_OA_clean.Rdata')
+load('Data/altmetric_OA_clean.Rdata')
 
 
 ## Subset to relevant columns and average mentions for each journal in each year

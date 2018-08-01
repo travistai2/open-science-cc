@@ -1,117 +1,226 @@
-"","journal","ISSN"
-"1","Agricultural and Forest Meteorology","1681923"
-"2","Agriculture, Ecosystems and Environment","1678809"
-"3","Ambio","447447"
-"4","Applied Energy","3062619"
-"5","Atmospheric Chemistry and Physics","16807324"
-"6","Atmospheric Environment","13522310"
-"7","Atmospheric Research","1698095"
-"8","Biogeosciences","17264189"
-"9","Biological Conservation","63207"
-"10","Building and Environment","3601323"
-"11","Bulletin of the American Meteorological Society","15200477"
-"12","Canadian Journal of Forest Research","12086037"
-"13","Catena","3418162"
-"14","Chinese Journal of Applied Ecology","10019332"
-"15","Chinese Journal of Ecology","10004890"
-"16","Climate and Development","17565537"
-"17","Climate Dynamics","14320894"
-"18","Climate of the Past","18149332"
-"19","Climate Policy","14693062"
-"20","Climate Research","16161572"
-"21","Climatic Change","15731480"
-"22","Cryosphere","19940424"
-"23","Current Science","113891"
-"24","Deep-Sea Research Part II: Topical Studies in Oceanography","9670645"
-"25","Diversity and Distributions","14724642"
-"26","Earth and Planetary Science Letters","1385013X"
-"27","Ecography","9067590"
-"28","Ecological Economics","9218009"
-"29","Ecological Indicators","1470160X"
-"30","Ecological Modelling","3043800"
-"31","Ecology","129658"
-"32","Ecology and Evolution","20457758"
-"33","Ecology and Society","17083087"
-"34","Ecology Letters","14610248"
-"35","Ecosphere","21508925"
-"36","Ecosystems","14350629"
-"37","Energy","3605442"
-"38","Energy and Buildings","3787788"
-"39","Energy Economics","18736181"
-"40","Energy Policy","3014215"
-"41","Environmental Earth Sciences","18666280"
-"42","Environmental Management","14321009"
-"43","Environmental Modelling and Software","13648152"
-"44","Environmental Monitoring and Assessment","15732959"
-"45","Environmental Research Letters","17489326"
-"46","Environmental Science and Policy","14629011"
-"47","Estuarine, Coastal and Shelf Science","10960015"
-"48","Forest Ecology and Management","3781127"
-"49","Freshwater Biology","13652427"
-"50","Geoderma","167061"
-"51","Geology","917613"
-"52","Geomorphology","0169555X"
-"53","Geophysical Research Letters","948276"
-"54","Global and Planetary Change","9218181"
-"55","Global Biogeochemical Cycles","8866236"
-"56","Global Change Biology","13652486"
-"57","Global Ecology and Biogeography","1466822X"
-"58","Global Environmental Change","9593780"
-"59","Holocene","14770911"
-"60","Hydrobiologia","3240924"
-"61","Hydrological Processes","10991085"
-"62","Hydrological Sciences Journal","2626667"
-"63","Hydrology and Earth System Sciences","10275606"
-"64","International Journal of Biometeorology","14321254"
-"65","International Journal of Climate Change Strategies and Management","17568692"
-"66","International Journal of Climatology","10970088"
-"67","International Journal of Environmental Research and Public Health","16604601"
-"68","International Journal of Remote Sensing","13665901"
-"69","Journal of Applied Ecology","13652664"
-"70","Journal of Applied Meteorology and Climatology","15588424"
-"71","Journal of Arid Environments","1095922X"
-"72","Journal of Biogeography","13652699"
-"73","Journal of Cleaner Production","9596526"
-"74","Journal of Climate","15200442"
-"75","Journal of Ecology","13652745"
-"76","Journal of Environmental Management","10958630"
-"77","Journal of Geophysical Research","1480227"
-"78","Journal of Hydrology","221694"
-"79","Journal of Hydrometeorology","15257541"
-"80","Journal of Paleolimnology","15730417"
-"81","Journal of Quaternary Science","10991417"
-"82","Mitigation and Adaptation Strategies for Global Change","15731596"
-"83","Molecular Ecology","1365294X"
-"84","Monthly Weather Review","15200493"
-"85","Natural Hazards","15730840"
-"86","Nature","14764687"
-"87","Nature Climate Change","17586798"
-"88","Nature Communications","20411723"
-"89","Nature Geoscience","17520908"
-"90","New Phytologist","14698137"
-"91","Nongye Gongcheng Xuebao/Transactions of the Chinese Society of Agricultural Engineering","10026819"
-"92","Oecologia","14321939"
-"93","Palaeogeography, Palaeoclimatology, Palaeoecology","310182"
-"94","Paleoceanography","8838305"
-"95","Philosophical Transactions of the Royal Society B: Biological Sciences","14712970"
-"96","Plant and Soil","15735036"
-"97","PLoS ONE","19326203"
-"98","Polar Biology","14322056"
-"99","Proceedings of the National Academy of Sciences of the United States of America","10916490"
-"100","Proceedings of the Royal Society B: Biological Sciences","14712954"
-"101","Progress in Oceanography","796611"
-"102","Quaternary International","10406182"
-"103","Quaternary Research","10960287"
-"104","Quaternary Science Reviews","2773791"
-"105","Regional Environmental Change","14363798"
-"106","Remote Sensing","20724292"
-"107","Remote Sensing of Environment","344257"
-"108","Renewable and Sustainable Energy Reviews","13640321"
-"109","Science","368075"
-"110","Science of the Total Environment","489697"
-"111","Scientific Reports","20452322"
-"112","Soil Biology and Biochemistry","380717"
-"113","Tree Physiology","0829318X"
-"114","Water (Switzerland)","20734441"
-"115","Water Resources Management","15731650"
-"116","Water Resources Research","431397"
+,journal,ISSN
+1,Acta Horticulturae,5677572
+2,Advances in Atmospheric Sciences,2561530
+3,Advances in Meteorology,16879317
+4,Agricultural Systems,18732267
+5,Agricultural Water Management,3783774
+6,Agricultural and Forest Meteorology,1681923
+7,"Agriculture, Ecosystems and Environment",1678809
+8,Agronomy for Sustainable Development,17730155
+9,Ambio,447447
+10,American Journal of Botany,15372197
+11,Annals of Botany,10958290
+12,Annals of Forest Science,1297966X
+13,Applied Energy,3062619
+14,Applied Geography,1436228
+15,Arabian Journal of Geosciences,18667538
+16,Arctic,40843
+17,"Arctic, Antarctic, and Alpine Research",15230430
+18,Atmospheric Chemistry and Physics,16807324
+19,Atmospheric Environment,13522310
+20,Atmospheric Research,1698095
+21,Austral Ecology,14429985
+22,BMC Evolutionary Biology,14712148
+23,BioScience,63568
+24,Biodiversity and Conservation,15729710
+25,Biogeochemistry,1573515X
+26,Biogeosciences,17264189
+27,Biological Conservation,63207
+28,Biological Invasions,15731464
+29,Biological Journal of the Linnean Society,10958312
+30,Biology Letters,1744957X
+31,Biomass and Bioenergy,9619534
+32,Boreas,15023885
+33,Building and Environment,3601323
+34,Bulletin of the American Meteorological Society,15200477
+35,Bulletin of the Geological Society of America,167606
+36,Canadian Journal of Fisheries and Aquatic Sciences,12057533
+37,Canadian Journal of Forest Research,12086037
+38,Catena,3418162
+39,Chemical Geology,92541
+40,Chinese Journal of Applied Ecology,10019332
+41,Chinese Journal of Ecology,10004890
+42,Climate Dynamics,14320894
+43,Climate Policy,14693062
+44,Climate Research,16161572
+45,Climate and Development,17565537
+46,Climate of the Past,18149332
+47,Climatic Change,15731480
+48,Conservation Biology,15231739
+49,Continental Shelf Research,2784343
+50,Coral Reefs,14320975
+51,Cryosphere,19940424
+52,Current Opinion in Environmental Sustainability,18773435
+53,Current Science,113891
+54,Deep-Sea Research Part II: Topical Studies in Oceanography,9670645
+55,Diversity and Distributions,14724642
+56,Earth Surface Processes and Landforms,1979337
+57,Earth System Dynamics,21904987
+58,Earth and Planetary Science Letters,1385013X
+59,Earth-Science Reviews,128252
+60,Ecography,9067590
+61,Ecohydrology,19360592
+62,Ecological Economics,9218009
+63,Ecological Engineering,9258574
+64,Ecological Indicators,1470160X
+65,Ecological Modelling,3043800
+66,Ecological Research,9123814
+67,Ecology,129658
+68,Ecology Letters,14610248
+69,Ecology and Evolution,20457758
+70,Ecology and Society,17083087
+71,Ecosphere,21508925
+72,Ecosystems,14350629
+73,Energies,19961073
+74,Energy,3605442
+75,Energy Economics,18736181
+76,Energy Policy,3014215
+77,Energy and Buildings,3787788
+78,Energy and Environment,0958305X
+79,Environmental Earth Sciences,18666280
+80,Environmental Health Perspectives,916765
+81,Environmental Management,14321009
+82,Environmental Modelling and Software,13648152
+83,Environmental Monitoring and Assessment,15732959
+84,Environmental Politics,9644016
+85,Environmental Pollution,18736424
+86,Environmental Research Letters,17489326
+87,Environmental Science and Policy,14629011
+88,Environmental Science and Pollution Research,9441344
+89,Environmental and Experimental Botany,988472
+90,Environmental and Resource Economics,9246460
+91,Eos,23249250
+92,Estuaries and Coasts,15592723
+93,"Estuarine, Coastal and Shelf Science",10960015
+94,European Journal of Agronomy,11610301
+95,European Journal of Forest Research,16124677
+96,Field Crops Research,3784290
+97,Forest Ecology and Management,3781127
+98,Forests,19994907
+99,Freshwater Biology,13652427
+100,Frontiers in Ecology and the Environment,15409295
+101,Frontiers in Plant Science,1664462X
+102,Functional Ecology,13652435
+103,GCB Bioenergy,17571707
+104,"Geochemistry, Geophysics, Geosystems",15252027
+105,Geochimica et Cosmochimica Acta,0046564X
+106,Geoderma,167061
+107,Geological Society Special Publication,3058719
+108,Geology,917613
+109,Geomorphology,0169555X
+110,Geophysical Research Letters,948276
+111,Geoscientific Model Development,1991959X
+112,Global Biogeochemical Cycles,8866236
+113,Global Change Biology,13652486
+114,Global Ecology and Biogeography,1466822X
+115,Global Environmental Change,9593780
+116,Global and Planetary Change,9218181
+117,Holocene,14770911
+118,Hydrobiologia,3240924
+119,Hydrological Processes,10991085
+120,Hydrological Sciences Journal,2626667
+121,Hydrology and Earth System Sciences,10275606
+122,ICES Journal of Marine Science,10959289
+123,International Journal of Biometeorology,14321254
+124,International Journal of Climate Change Strategies and Management,17568692
+125,International Journal of Climatology,10970088
+126,International Journal of Environmental Research and Public Health,16604601
+127,International Journal of Global Warming,17582091
+128,International Journal of Greenhouse Gas Control,17505836
+129,International Journal of Life Cycle Assessment,9483349
+130,International Journal of Remote Sensing,13665901
+131,Journal of Advances in Modeling Earth Systems,19422466
+132,Journal of Animal Ecology,13652656
+133,Journal of Applied Ecology,13652664
+134,Journal of Applied Meteorology and Climatology,15588424
+135,Journal of Arid Environments,1095922X
+136,Journal of Asian Earth Sciences,13679120
+137,Journal of Atmospheric and Solar-Terrestrial Physics,13646826
+138,Journal of Biogeography,13652699
+139,Journal of Cleaner Production,9596526
+140,Journal of Climate,15200442
+141,Journal of Coastal Research,15515036
+142,Journal of Ecology,13652745
+143,Journal of Environmental Management,10958630
+144,Journal of Experimental Biology,14779145
+145,Journal of Experimental Botany,14602431
+146,Journal of Experimental Marine Biology and Ecology,220981
+147,"Journal of Food, Agriculture and Environment",14590263
+148,Journal of Geographical Sciences,1009637X
+149,Journal of Geophysical Research,1480227
+150,Journal of Glaciology,221430
+151,Journal of Great Lakes Research,3801330
+152,Journal of Hydrology,221694
+153,Journal of Hydrometeorology,15257541
+154,Journal of Marine Systems,9247963
+155,Journal of Natural Disasters,10044574
+156,Journal of Paleolimnology,15730417
+157,Journal of Physical Oceanography,15200485
+158,Journal of Quaternary Science,10991417
+159,Journal of Vegetation Science,11009233
+160,Journal of Water and Climate Change,20402244
+161,Journal of the American Water Resources Association,1093474X
+162,Land Use Policy,2648377
+163,Landscape Ecology,15729761
+164,Limnology and Oceanography,243590
+165,Local Environment,14696711
+166,Marine Biology,14321793
+167,Marine Geology,253227
+168,Marine Policy,0308597X
+169,Marine Pollution Bulletin,0025326X
+170,Mitigation and Adaptation Strategies for Global Change,15731596
+171,Molecular Ecology,1365294X
+172,Molecular Phylogenetics and Evolution,10959513
+173,Monthly Weather Review,15200493
+174,Natural Hazards,15730840
+175,Natural Hazards and Earth System Science,16849981
+176,Nature,14764687
+177,Nature Climate Change,17586798
+178,Nature Communications,20411723
+179,Nature Geoscience,17520908
+180,New Phytologist,14698137
+181,Nongye Gongcheng Xuebao/Transactions of the Chinese Society of Agricultural Engineering,10026819
+182,Ocean and Coastal Management,9645691
+183,Oecologia,14321939
+184,Oikos,16000706
+185,PLoS ONE,19326203
+186,"Palaeogeography, Palaeoclimatology, Palaeoecology",310182
+187,Paleoceanography,8838305
+188,PeerJ,21678359
+189,"Philosophical Transactions of the Royal Society A: Mathematical, Physical and Engineering Sciences",14712962
+190,Philosophical Transactions of the Royal Society B: Biological Sciences,14712970
+191,Physics and Chemistry of the Earth,14747065
+192,Plant Ecology,15735052
+193,Plant and Soil,15735036
+194,Polar Biology,14322056
+195,Proceedings of the National Academy of Sciences of the United States of America,10916490
+196,Proceedings of the Royal Society B: Biological Sciences,14712954
+197,Progress in Oceanography,796611
+198,Progress in Physical Geography,3091333
+199,Quarterly Journal of the Royal Meteorological Society,1477870X
+200,Quaternary International,10406182
+201,Quaternary Research,10960287
+202,Quaternary Science Reviews,2773791
+203,Regional Environmental Change,14363798
+204,Remote Sensing,20724292
+205,Remote Sensing of Environment,344257
+206,Renewable Energy,9601481
+207,Renewable and Sustainable Energy Reviews,13640321
+208,Review of Palaeobotany and Palynology,346667
+209,Russian Meteorology and Hydrology,10683739
+210,Science,368075
+211,Science China Earth Sciences,18691897
+212,Science of the Total Environment,489697
+213,Scientific Reports,20452322
+214,Sedimentary Geology,370738
+215,Sedimentology,370746
+216,Soil Biology and Biochemistry,380717
+217,Stochastic Environmental Research and Risk Assessment,14363259
+218,Transportation Research Record,3611981
+219,Tree Physiology,0829318X
+220,Trees - Structure and Function,9311890
+221,Water (Switzerland),20734441
+222,Water Resources Management,15731650
+223,Water Resources Research,431397
+224,Water Science and Technology,2731223
+225,Wetlands,2775212

@@ -14,10 +14,13 @@ setwd("~/GitHub/open-science-cc/")
 library(ggplot2)
 library(plyr)
 library(lme4)
+library(here)
 
+setwd(here())
 
 ## load data
-load("./Data/scopus_OA_climate_clean.Rdata")  ## load scopus data 
+## ***This is private Scopus data that we cannot provide. Please refer to the query.md for Scopus search terms***
+load("Data/scopus_OA_climate_clean.Rdata")  ## load scopus data
 sub.dat<-dat[,c("Source.title","Year","Cited.by","OA","Open.Access","jour.bin")]
 
 names(sub.dat)
