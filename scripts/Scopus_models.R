@@ -20,7 +20,7 @@ setwd(here())
 
 ## load data
 ## ***This is private Scopus data that we cannot provide. Please refer to the query.md for Scopus search terms***
-load("Data/scopus_OA_climate_clean.Rdata")  ## load scopus data
+load("data/scopus_OA_climate_clean.Rdata")  ## load scopus data
 sub.dat<-dat[,c("Source.title","Year","Cited.by","OA","Open.Access","jour.bin")]
 
 names(sub.dat)
@@ -51,7 +51,7 @@ summary(fit)
 hist(resid(fit))
 
 ## save model output
-save(fit, mod.dat, file='./Data/scopus_glmerfit.Rdata')
+save(fit, mod.dat, file='data/scopus_glmerfit.Rdata')
 
 
 

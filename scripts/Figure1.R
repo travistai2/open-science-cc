@@ -8,17 +8,20 @@
 ########################
 
 rm(list=ls())
-setwd("~/GitHub/open-science-cc/")
+library(here)
+setwd(here())
+
 
 # load packages
 library(plyr)
 library(ggplot2)
 
 ## load data
-load("./Data/scopus_OA_climate_clean.Rdata") 
+## ***This is private Scopus data that we cannot provide. Please refer to the query.md for Scopus search terms***
+load("data/scopus_OA_climate_clean.Rdata") 
 
 
-j.dat<-read.csv("./Data/BinJournallist_fromScopus.csv",stringsAsFactors = F)
+j.dat<-read.csv("data/BinJournallist_fromScopus.csv",stringsAsFactors = F)
 dat<-scop
 dat$Cited.by[which(is.na(dat$Cited.by))]<-0
 dat<-merge(dat,j.dat[,c("Source.title","bin")],by.x="Source.title",by.y="Source.title",all.x=T)

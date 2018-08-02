@@ -17,7 +17,8 @@ library(here)
 setwd(here())
 
 ## load Almetric dataset
-load('Data/altmetric_OA_clean.Rdata')
+## ***This is private Altmetric data that we cannot provide. Please refer to the query.md for Altmetric search terms***
+load('data/altmetric_OA_clean.Rdata')
 
 
 ## Subset to relevant columns and average mentions for each journal in each year
@@ -62,4 +63,4 @@ summary(m.policy)
 hist(resid(m.policy))
 
 
-save(m.news, m.twitter, m.policy, file='Data/altmetric_glmer_fit.Rdata')
+save(m.news, m.twitter, m.policy, file='data/altmetric_glmer_fit.Rdata')

@@ -8,7 +8,9 @@
 ########################
 
 rm(list=ls())
-setwd("~/GitHub/open-science-cc/")
+library(here)
+setwd(here())
+
 
 
 ## load libraries
@@ -30,7 +32,7 @@ add_label <- function(xfrac, yfrac, label, pos = 4, ...){
 
 
 ## load scopus data
-load('Data/scopus_glmerfit.Rdata')
+load('data/scopus_glmerfit.Rdata')
 
 ## create prediction dataframe
 pred<-expand.grid(OA =unique(mod.dat$OA), jour.bin.scaled=unique(mod.dat$jour.bin.scaled), Year = 2007, Source.title='Nature')
@@ -44,7 +46,7 @@ scopus.avg<-predict(fit, newdata=pred2, re.form = NA)
 
 
 ## load altmetric data
-load('Data/altmetric_glmer_fit.Rdata')
+load('data/altmetric_glmer_fit.Rdata')
 
 ## pred lines for average mention rate
 pred2<-expand.grid(OA =unique(alt$OA), SJRfac.scaled=0, Year = 2007, Source.title='Nature')
