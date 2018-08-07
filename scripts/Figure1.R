@@ -20,12 +20,6 @@ library(ggplot2)
 ## ***This is private Scopus data that we cannot provide. Please refer to the query.md for Scopus search terms***
 load("data/scopus_OA_climate_clean.Rdata") 
 
-
-j.dat<-read.csv("data/BinJournallist_fromScopus.csv",stringsAsFactors = F)
-dat<-scop
-dat$Cited.by[which(is.na(dat$Cited.by))]<-0
-dat<-merge(dat,j.dat[,c("Source.title","bin")],by.x="Source.title",by.y="Source.title",all.x=T)
-
 ## summary of open access over time
 sum.dat<-ddply(dat,.(Year,bin),summarize,
                OpenArt = length(OA[which(OA==T)]),
