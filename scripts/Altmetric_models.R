@@ -22,7 +22,7 @@ load('data/altmetric_OA_clean.Rdata')
 
 
 ## Subset to relevant columns and average mentions for each journal in each year
-mentions<-alt %>% mutate(OA = ifelse(OA == TRUE, 'Open', 'Closed')) %>%
+altmetric<-alt %>% mutate(OA = ifelse(OA == TRUE, 'Open', 'Closed')) %>%
 	group_by(SJRfac, OA, Journal, year) %>% 
 	summarise(news = mean(News.mentions), 
 				policy=mean(Policy.mentions), 
@@ -30,16 +30,16 @@ mentions<-alt %>% mutate(OA = ifelse(OA == TRUE, 'Open', 'Closed')) %>%
 	gather(source, mentions, -SJRfac, -OA, -Journal, -year) 
 
 ## scale journal factor
-mentions$SJRfac.scaled<-scale(as.numeric(mentions$SJRfac))
+altmetric$SJRfac.scaled<-scale(as.numeric(altmetric$SJRfac))
 
 ## drop zero mention entries
-mentions<-mentions[mentions$mentions!=0,]
+altmetric<-altmetric[altmetric$mentions!=0,]
 
 ## log10 transform for modelling
-mentions$mentions10<-log10(mentions$mentions)
+altmetric$mentions10<-log10(altmetric$mentions)
 
 
-names(mentions)
+names(altmetric)
 # Journal = journal title
 # OA = open access (TRUE/FALSE)
 # year = publication year
@@ -53,35 +53,36 @@ names(mentions)
 ## Journal impact bin * open access as fixed effect with interaction
 ## Publication year and journal title as random intercept
 ## LMER with gaussian distribution
+## data frame 'altmetric' is provided in altmetric_lmer_fit.Rdata
 
 ## News mentions
-m.news<-lmer(News.mentions ~ SJR * OA + (1 | year) + (1 | Journal), mentions)
+m.news<-lmer(News.mentions ~ SJR * OA + (1 | year) + (1 | Journal), altmetric)
 summary(m.news)
 hist(resid(m.news))
 
 ## Twitter mentions
-m.twitter<-lmer(Twitter.mentions ~ SJR * OA + (1 | year) + (1 | Journal), mentions)
+m.twitter<-lmer(Twitter.mentions ~ SJR * OA + (1 | year) + (1 | Journal), altmetric)
 summary(m.twitter)
 hist(resid(m.twitter))
 
 ## Policy mentions
-m.policy<-lmer(Policy.mentions ~ SJR * OA + (1 | year) + (1 | Journal), mentions)
+m.policy<-lmer(Policy.mentions ~ SJR * OA + (1 | year) + (1 | Journal), altmetric)
 summary(m.policy)
 hist(resid(m.policy))
 
 
 ## make predictions for Fig. 2
-news.dat<-expand.grid(OA = unique(mentions$OA), SJRfac.scaled=unique(mentions$SJRfac.scaled), year = 2010, Journal='Nature')
+news.dat<-expand.grid(OA = unique(altmetric$OA), SJRfac.scaled=unique(altmetric$SJRfac.scaled), year = 2010, Journal='Nature')
 news.dat$p<-predict(news, newdat=news.dat, re.form=NA, type='response')
 news.dat$p10<-10^news.dat$p
 news.dat$source<-'news'
 
-twitter.dat<-expand.grid(OA = unique(mentions$OA), SJRfac.scaled=unique(mentions$SJRfac.scaled), year = 2010, Journal='Nature')
+twitter.dat<-expand.grid(OA = unique(altmetric$OA), SJRfac.scaled=unique(altmetric$SJRfac.scaled), year = 2010, Journal='Nature')
 twitter.dat$p<-predict(twitter, newdat=twitter.dat, re.form=NA, type='response')
 twitter.dat$p10<-10^twitter.dat$p
 twitter.dat$source<-'twitter'
 
-policy.dat<-expand.grid(OA = unique(mentions$OA), SJRfac.scaled=unique(mentions$SJRfac.scaled), year = 2010, Journal='Nature')
+policy.dat<-expand.grid(OA = unique(altmetric$OA), SJRfac.scaled=unique(altmetric$SJRfac.scaled), year = 2010, Journal='Nature')
 policy.dat$p<-predict(policy, newdat=policy.dat, re.form=NA, type='response')
 policy.dat$p10<-10^policy.dat$p
 policy.dat$source<-'policy'

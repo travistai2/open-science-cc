@@ -29,7 +29,7 @@ add_label <- function(xfrac, yfrac, label, pos = 4, ...){
 
 
 ## load scopus data
-load('data/scopus_lmerfit.Rdata')
+load('data/scopus_lmer_fit.Rdata')
 
 ## pred lines for average citation rate
 pred2<-expand.grid(OA =unique(pred$OA), jour.bin.scaled=0, Year = 2007, Source.title='Nature')

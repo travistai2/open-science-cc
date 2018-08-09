@@ -32,27 +32,28 @@ names(sub.dat)
 # "SJRbin" = journal impact factor bin (low, medium, high, very high)
 
 ## summarise average citation by journal, by impact bin + access + year
-pred<-ddply(sub.dat,.(Source.title,Year,Open.Access,OA,SJRbin),summarize,
+scopus<-ddply(sub.dat,.(Source.title,Year,Open.Access,OA,SJRbin),summarize,
                MeanCite = mean(Cited.by,na.rm=T))
 
 ## log10 transform citation response and scale journal bin
 ## +1 needed for papers without citations
-pred$log10MeanCite<-log10(pred$MeanCite+1)
-pred$jour.bin.scaled<-scale(as.numeric(pred$SJRbin))
+scopus$log10MeanCite<-log10(scopus$MeanCite+1)
+scopus$jour.bin.scaled<-scale(as.numeric(scopus$SJRbin))
 
 
 ## Fit mixed effects model ##
 ## Journal impact bin * open access as fixed effect with interaction
 ## Publication year and journal title as random intercept
+## data frame 'scopus' is provided in scopus_lmer_fit.Rdata
 
 m.citations<-lmer(log10MeanCite ~ jour.bin.scaled*OA + 
 							(1|Year) + (1 | Source.title),
-							data=pred)
+							data=scopus)
 summary(m.citations)
 hist(resid(m.citations))
 
 ## save model output
-save(m.citations, pred, file='data/scopus_lmerfit.Rdata')
+save(m.citations, scopus, file='data/scopus_lmer_fit.Rdata')
 ## this Rdata is used for Fig 2 panel A
 
 
