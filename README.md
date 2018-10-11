@@ -1,6 +1,6 @@
 # Enhancing climate change research with open science
 
-This repository contains code for the data queries, R scripts and Figures accompanying Tai & Robinson commentary article on adopting open science for climate change research.
+This repository contains code for the data queries, R scripts and Figures accompanying [Tai & Robinson, 2018. Enhancing Climate Change Research With Open Science, Frontiers in Environmental Science.](https://www.frontiersin.org/articles/10.3389/fenvs.2018.00115/full)
 
 The following R packages were used to analyse data and create figures.
 
